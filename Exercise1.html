@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's Age Calculator</title>
+</head>
+<body>
+    <h1>Dog's Age</h1>
+    <script>
+        // This function takes input (age), multiplies by 7, returns result
+        function ageInDogYears(humanAge) {
+            return humanAge * 7;
+        }
+        // Test the function with different ages and log the results
+        const ages = [3, 7, 15, 21];
+        ages.forEach(function(age) {
+            const dogYears = ageInDogYears(age);
+            console.log(`If you are ${age} years old, you are ${dogYears} in dog years.`);
+        });
+    </script>
+</body>
+</html>
